@@ -1,9 +1,11 @@
+import os
 
 class Config:
 
-   # NEWS_API_BASE_URL ='https://api.themoviedb.org/3/movie/{}?api_key={}'
-    NEWS_API_KEY = ('f4c86580284a4e12bd792c731cfe34c4')
-    SECRET_KEY = ('SECRET_KEY')
+    SOURCES_API_BASE_URL ='https://newsapi.org/v2/top-headlines/sources?apiKey={}'
+    ARTICLES_API_BASE_URL ='https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
+    NEWS_API_KEY = 'f4c86580284a4e12bd792c731cfe34c4'
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 class ProdConfig(Config):
