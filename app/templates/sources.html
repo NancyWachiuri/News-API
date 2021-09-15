@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to NewsApp</h1>
+    {% for items in sources %}
+    <div>
+        <h1>
+         {{items.name}}
+         
+
+        </h1>
+        <p>
+          {{items.description}}
+        </p>
+
+        <a href="/articles/{{items.id}}">
+            Open Articles
+        </a>
+        {{items.id}}
+        
+    </div>
+    {% endfor %}
+</body>
+</html>
