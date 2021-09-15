@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" />
+
     
+</head>
+
+<body>
+    <div class="jumbotron" >
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="column text-center">
+               
+
+    <h1>Read Articles</h1>
     {% for items in id %}
     <div>
+
+
         {{ items.url_to_image }}
         <img src="{{ items.image }}" alt="{{ items.news_title }} poster" class="img-responsive">
         <h1>
@@ -27,7 +40,12 @@
         </a>
         {{items.id}}
         
-    </div>
+   
     {% endfor %}
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html
