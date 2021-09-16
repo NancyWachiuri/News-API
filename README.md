@@ -15,7 +15,7 @@ This project was generated with [PYTHON, FLASK PROGRAMMING]( version 2.0.X)
 
 ## Setup/Installation 
 
- git clone https://github.com/NancyWachiuri/AngularWeek2.git extract the file cd. Open the application on your favorite browser``
+ git clone https://github.com/NancyWachiuri/News-API.git extract the file cd. Open the application on your favorite browser``
 
 
 # Technologies Used:
